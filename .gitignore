@@ -41,3 +41,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Evita incluir el directorio de modulos que utiliza nodejs
+node_modules/
+
+# Evita incluir los archivos de normalize.css
+css/normalize.css
+dist/normalize.css

@@ -1,0 +1,109 @@
+{
+  "id": "59b5d919",
+  "cfgVersion": 1,
+  "name": "ed-grid",
+  "files": {
+    "e9eafd83": {
+      "id": "e9eafd83",
+      "pid": "59b5d919",
+      "name": "gulpfile.js",
+      "input": "gulpfile.js",
+      "customOutput": false,
+      "type": "Js",
+      "config": {
+        "autoCompile": false,
+        "uglify": true,
+        "mangle": true,
+        "sourcemaps": false
+      }
+    },
+    "2e8f9ea2": {
+      "id": "2e8f9ea2",
+      "pid": "59b5d919",
+      "name": "readme.md",
+      "input": "readme.md",
+      "customOutput": false,
+      "type": "Md",
+      "config": {
+        "autoCompile": false,
+        "sanitize": false,
+        "gfm": true
+      }
+    },
+    "b99bd223": {
+      "id": "b99bd223",
+      "pid": "59b5d919",
+      "name": "ed-grid-custom.styl",
+      "input": "stylus\\ed-grid-custom.styl",
+      "customOutput": false,
+      "type": "Stylus",
+      "config": {
+        "autoCompile": true,
+        "lineNumbers": false,
+        "nib": false,
+        "compress": false,
+        "autoprefixer": false
+      }
+    },
+    "6900a2ca": {
+      "id": "6900a2ca",
+      "pid": "59b5d919",
+      "name": "ed-grid.styl",
+      "input": "stylus\\ed-grid.styl",
+      "customOutput": false,
+      "type": "Stylus",
+      "config": {
+        "autoCompile": true,
+        "lineNumbers": false,
+        "nib": false,
+        "compress": false,
+        "autoprefixer": false
+      }
+    }
+  },
+  "imports": {
+    "c1436152": {
+      "id": "c1436152",
+      "pid": "59b5d919",
+      "path": "stylus\\normalize.styl",
+      "parents": [
+        "6900a2ca"
+      ]
+    }
+  },
+  "images": {},
+  "config": {
+    "watch": true,
+    "liveRefresh": true,
+    "liveRefreshDelay": "1",
+    "filterPatterns": "",
+    "useCustomServer": false,
+    "customServerUrl": "",
+    "cssPath": "css/",
+    "jsPath": "js/",
+    "htmlPath": "html/",
+    "minJsPath": "min/",
+    "htmlExtension": ".html",
+    "cssPathType": "REPLACE_TYPE",
+    "htmlPathType": "REPLACE_TYPE",
+    "jsPathType": "REPLACE_TYPE",
+    "minJsPathType": "RELATIVE_FILEDIR",
+    "htmlTypes": "jade, haml, slim, markdown, md",
+    "cssTypes": "less, sass, stylus, scss, styl",
+    "jsTypes": "coffee, coffeescript, coffeescripts, ls, livescript, livescripts",
+    "cssPreprocessorPath": "",
+    "htmlPreprocessorPath": "",
+    "jsPreprocessorPath": "",
+    "minJsPreprocessorPath": "",
+    "autoprefixerBrowsers": "",
+    "ftpHost": "",
+    "ftpPort": "21",
+    "ftpRemotePath": "",
+    "ftpIgnorePreprocessorFiles": true,
+    "ftpType": "FTP",
+    "ftpExcludePatterns": "",
+    "ftpSecure": false,
+    "ftpPassword": "",
+    "ftpUsername": ""
+  }
+}
