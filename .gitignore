@@ -48,3 +48,6 @@ node_modules/
 # Evita incluir los archivos de normalize.css
 css/normalize.css
 dist/normalize.css
+
+# Evita archivo de prepros
+prepros.cfg
