@@ -2,6 +2,7 @@
 var gulp      = require("gulp");
 var stylus    = require("gulp-stylus");
 var minifyCss = require('gulp-minify-css');
+var out       = require('gulp-out');
 
 // incluir, si se desea trabajar con sourcemaps.
 var sourcemaps = require("gulp-sourcemaps");
@@ -13,19 +14,19 @@ gulp.task('stylus', function(){
     .pipe(sourcemaps.init())
     .pipe(stylus())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('dist'));
 });
 
 // Minifica el codigo CSS
 gulp.task('minify-css', function(){
-  gulp.src('./css/*.css')
+  gulp.src('./dist/*.css')
     .pipe(minifyCss())
-    .pipe(gulp.dest("./dist"));
+    .pipe(out("dist/{basename}.min.{extension}"));
 });
 
 // Prosesa tras cualquier cambio
 gulp.task('watch', function(){
-  gulp.watch('./stylus/*.styl', ['stylus','minify-css']);
+  gulp.watch('./stylus/**/*.styl', ['stylus','minify-css']);
 });
 
 
