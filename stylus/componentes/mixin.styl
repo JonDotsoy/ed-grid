@@ -1,0 +1,29 @@
+// Genera las medidas para las grillas a partir de las iteraciones
+genera-parrilla(nombre, iteraciones)
+
+    // Recorre las iteraciones
+    for iteracion in iteraciones
+
+        // recorre 1 en 1 asta llegar al numero de la iteración
+        for posicion in (1..iteracion)
+
+            .{nombre}-{posicion}-{iteracion}
+
+                valor = ((posicion / iteracion) * 100%)
+                width valor
+
+// Genera las medidas para las parrillas a partir de una intervalo de porcentaje
+genera-parrilla-porcetaje(nombre, intervalo)
+    
+    // Calcula los saltos antes de llegar al 100
+    saltos = 100 / intervalo
+
+    // genera un loop según los saltos
+    for salto in (1..saltos)
+
+        indiceDelPorcentaje = (salto * intervalo)
+        valor = (indiceDelPorcentaje * 1%)
+
+        .{nombre}-{indiceDelPorcentaje}
+            width valor
+    
